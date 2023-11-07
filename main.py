@@ -16,6 +16,9 @@ USERNAME = os.environ["USERNAME"]
 PASSWORD = os.environ["PASSWORD"]
 TRUECAPTCHA_USERID = os.environ["TRUECAPTCHA_USERID"]
 TRUECAPTCHA_APIKEY = os.environ["TRUECAPTCHA_APIKEY"]
+TG_BOT_TOKEN = os.environ["TG_BOT_TOKEN"]
+TG_USER_ID = os.environ["TG_USER_ID"]
+
 
 # TrueCaptcha https://apitruecaptcha.org
 # https://gist.github.com/ZetaoYang/e182453efadc90739a14daf2bd829087
@@ -36,8 +39,8 @@ COOL_PUSH_MODE = 'send'
 PUSH_PLUS_TOKEN = ''
 
 # Telegram Bot Push https://core.telegram.org/bots/api#authorizing-your-bot
-TG_BOT_TOKEN = ''  # 通过 @BotFather 申请获得，示例：1077xxx4424:AAFjv0FcqxxxxxxgEMGfi22B4yh15R5uw
-TG_USER_ID = ''  # 用户、群组或频道 ID，示例：129xxx206
+# TG_BOT_TOKEN = ''  # 通过 @BotFather 申请获得，示例：1077xxx4424:AAFjv0FcqxxxxxxgEMGfi22B4yh15R5uw
+# TG_USER_ID = ''  # 用户、群组或频道 ID，示例：129xxx206
 TG_API_HOST = 'api.telegram.org'  # 自建 API 反代地址，供网络环境无法访问时使用，网络正常则保持默认
 
 # wecomchan https://github.com/easychen/wecomchan
