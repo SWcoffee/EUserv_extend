@@ -12,6 +12,11 @@ from bs4 import BeautifulSoup
 # USERNAME = ''  # 这里填用户名，邮箱也可
 # PASSWORD = ''  # 这里填密码
 
+USERNAME = os.environ["USERNAME"]
+PASSWORD = os.environ["PASSWORD"]
+TRUECAPTCHA_USERID = os.environ["TRUECAPTCHA_USERID"]
+TRUECAPTCHA_APIKEY = os.environ["TRUECAPTCHA_APIKEY"]
+
 # TrueCaptcha https://apitruecaptcha.org
 # https://gist.github.com/ZetaoYang/e182453efadc90739a14daf2bd829087
 # 验证码识别，默认使用 Demo API，每天有100次免费额度，建议自行注册以确保稳定性
