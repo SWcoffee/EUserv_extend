@@ -369,11 +369,11 @@ def main_handler(event, context):
         time.sleep(5)
 
     # 五个通知渠道至少选取一个
-    SCKEY and server_chan()
-    COOL_PUSH_MODE and COOL_PUSH_SKEY and coolpush()
-    PUSH_PLUS_TOKEN and push_plus()
+    # SCKEY and server_chan()
+    # COOL_PUSH_MODE and COOL_PUSH_SKEY and coolpush()
+    # PUSH_PLUS_TOKEN and push_plus()
     TG_BOT_TOKEN and TG_USER_ID and TG_API_HOST and telegram()
-    WECOMCHAN_DOMAIN and WECOMCHAN_SEND_KEY and WECOMCHAN_TO_USER and wecomchan()
+    # WECOMCHAN_DOMAIN and WECOMCHAN_SEND_KEY and WECOMCHAN_TO_USER and wecomchan()
 
     print('*' * 30)
 
