@@ -5,7 +5,7 @@ import time
 import requests
 import base64
 from bs4 import BeautifulSoup
-
+import ddddorc
 
 # 强烈建议部署在非大陆区域，例如HK、SG等
 # 常量命名使用全部大写的方式，可以使用下划线。
@@ -214,6 +214,8 @@ def check(sess_id: str, session: requests.session):
 def captcha_solver(captcha_image_url: str, session: requests.session) -> dict:
     response = session.get(captcha_image_url)
     encoded_string = base64.b64encode(response.content)
+
+    """
     url = "https://api.apitruecaptcha.org/one/gettext"
 
     data = {
@@ -225,6 +227,17 @@ def captcha_solver(captcha_image_url: str, session: requests.session) -> dict:
     }
     r = requests.post(url=url, json=data)
     j = json.loads(r.text)
+    """
+
+    ocr = ddddocr.DdddOcr()
+    res = ocr.classification(encoded_string)
+    
+    j= {
+	    "result": str(res)
+        }
+
+
+    
     return j
 
 def handle_captcha_solved_result(solved: dict) -> str:
