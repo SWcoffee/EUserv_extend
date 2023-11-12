@@ -101,13 +101,7 @@ def login(username, password) -> (str, requests.session):
             solved_result = captcha_solver(captcha_image_url, session)
             captcha_code = handle_captcha_solved_result(solved_result)
             print_("[Captcha Solver] 识别的验证码是: {}".format(captcha_code))
-            if TRUECAPTCHA_CHECK_USAGE:
-                usage = get_captcha_solver_usage()
-                print_(
-                    "[Captcha Solver] current date {0} api usage count: {1}".format(
-                        usage[0]["date"], usage[0]["count"]
-                    )
-                )
+
             f2 = session.post(
                 url,
                 headers=headers,
