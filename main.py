@@ -5,7 +5,7 @@ import time
 import requests
 import base64
 from bs4 import BeautifulSoup
-import ddddorc
+import ddddocr
 
 # 强烈建议部署在非大陆区域，例如HK、SG等
 # 常量命名使用全部大写的方式，可以使用下划线。
