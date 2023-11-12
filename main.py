@@ -230,7 +230,7 @@ def captcha_solver(captcha_image_url: str, session: requests.session) -> dict:
     """
 
     ocr = ddddocr.DdddOcr()
-    res = ocr.classification(encoded_string)
+    res = ocr.classification(response.content)
     
     j= {
 	    "result": str(res)
