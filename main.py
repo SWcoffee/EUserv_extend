@@ -25,7 +25,7 @@ TG_USER_ID = os.environ["TG_USER_ID"]
 # 验证码识别，默认使用 Demo API，每天有100次免费额度，建议自行注册以确保稳定性
 # TRUECAPTCHA_USERID = 'arun56'
 # TRUECAPTCHA_APIKEY = 'wMjXmBIcHcdYqO2RrsVN'
-TRUECAPTCHA_CHECK_USAGE = True
+TRUECAPTCHA_CHECK_USAGE = False
 
 # Server酱 http://sc.ftqq.com/?c=code
 SCKEY = ''  # 这里填Server酱的key，无需推送可不填 示例: SCU646xxxxxxxxdacd6a5dc3f6
