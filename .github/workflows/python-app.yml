@@ -28,7 +28,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install  requests beautifulsoup4 ddddocr
+        pip install  requests beautifulsoup4 pillow==9.5.0 ddddocr
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test with pytest
       env:
